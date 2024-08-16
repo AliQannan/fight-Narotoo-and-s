@@ -1,0 +1,42 @@
+
+
+
+.container{
+    height: 500px;
+    width: 80%;
+    margin: auto;
+}
+
+.col-4{
+
+    border: 2px solid #e8e8e8;
+
+}
+
+.col-4 img{
+    width: 40%;
+    display: block;
+    margin: auto;
+
+}
+.img-n{
+    width: 120px;
+    height: 150px;
+    margin: 40px  auto ;
+    overflow: hidden;
+}
+
+.img-n img{
+    width: 100%;
+}
+
+span{
+    transition:  .5s linear;
+}
+
+
+/* .col-4 div:first-child span{
+    width: 80%;
+
+
+} */
