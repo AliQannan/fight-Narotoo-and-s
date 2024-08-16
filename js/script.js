@@ -34,31 +34,33 @@ Person.prototype.attack = function (opponent) {
 // make health
 
 Person.prototype.makehealth = function () {
-  if (this.health !== 100) {
-    this.health += 10;
+  if (this.health !== 100) { // condition for make sure
+    this.health += 10; // health plus 10
   }
   console.log(this.health);
-  if (this.health > 100) {
-    this.health = 100;
+  if (this.health > 100) { //health conition for make sure if heath not be more than  110%
+    this.health = 100; 
   }
 
-  console.log(this.health);
-  this.prograssBtn.style.width = `${this.health}%`;
+
+  this.prograssBtn.style.width = `${this.health}%`; // ui display the health
 };
-
+// object form the contructor function 
 let narutoo = new Person("narutoo", 10, 100, 100);
 let sa = new Person("sa", 5, 100, 100);
-
+// attack btn for sa
 sa.attackBtn.addEventListener("click", () => {
   sa.attack(narutoo);
 });
+// attack btn for narutoo 
 narutoo.attackBtn.addEventListener("click", () => {
   narutoo.attack(sa);
 });
-
+// health btn for sa
 sa.healthBtn.addEventListener("click", () => {
   sa.makehealth();
 });
+//health btn for narutoo
 narutoo.healthBtn.addEventListener("click", () => {
   narutoo.makehealth();
 });
